@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Все теги</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Букин Максим">
+    <meta name="description" content="Песочница для тренировки кода">
+    <meta name="keywords" content="тест,песок,песочница,проверка">
+    <link rel="sortcut icon" href="https://atom.io/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css"><!--подключение css файла-->
+  </head>
+  <body>
+    <h1>По факту это <small>рабочий сайт</small></h1>
+    <h2><big>Да да</big>, он не пиздит</h2>
+    <h3>Вы думаете <b>наебал?</b></h3>
+    <h4>Вы думаете я <i>пиздабол?</i></h4>
+    <h5><em>Хуй</em> там</h5>
+    <h6><strike>Я вас наебал</strike></h6>
+
+    <pre> function some(){
+  return some;
+}</pre>
+    <code> let x = 0;</code>
+
+    <p>Абзац текста</p>
+    <p>Я <em>рад</em>, что ты не <em>опоздал</em>.</p>
+    <p>Эта жидкость <strong>очень токсична</strong>.</p>
+
+    H<sub>2</sub>O<br><hr>
+    2<sup>2</sup>=4
+
+    <abbr title="Dolbaёbs Entertaiment">DE</abbr>
+    <address>
+      Moscow, Russia
+    </address>
+
+    <!-- Списки -->
+
+    <ol start="1" type="I">
+      <li>Первый номер списка</li>
+      <li>Второй номер</li>
+      <li>Третий</li>
+      <ol start="4" type="I">
+        <li> Четвертый вложеный номер(список в списке)</li>
+      </ol>
+    </ol>
+
+    <ul>
+      <li>Первый номер списка</li>
+      <li>Второй номер</li>
+      <li>Третий</li>
+    </ul>
+
+    <!-- Ссылки -->
+
+    <a href="#Якорь для движения по странице">Для перехода к якорю</a>
+
+    <a href="https://www.youtube.com" target="_blank" title="ссылка ютуб">
+      <p>Ссылка на главную страницу Ютуба</p>
+    </a>
+    <!-- таргет открывает новую вкладку с атрибутом _blank,
+    без него открывает на этой же странице.
+    title выводит подсказку при  наведении.
+    тег не будет работать без href -->
+    <a href="vse_tegi.html" target="_blank" title="Ссылка на примеры тегов">
+      <p>Ссылка на другой наш сайт с примерами тегов</p>
+    </a>
+    <a name="Якорь для движения по странице">Якорь</a><br>
+    <a href="mailto:bukinrabota@gmail.com">Написать на почту</a><br>
+
+    <!-- Картинки -->
+
+    <img src="https://uploads-ssl.webflow.com/60e6daa5d209097cc8062516/61519b4e40f319ca518c5f5a_00030.jpg" width="400px" title="Навёл на меня" alt="Картинка Доджа не загрузилась("><br>
+
+    <img src="images/mark2.jpg" width="475px" alt="Я короче ехал домой и они давай меня подрезать, я короче срезал и бах бах бах не загрузился марк короче, хана марку вообще, а марк был хороший вообще.">
+    <!--
+    Полный путь к картинку которую хотим отобразить в атрибуте src.
+    width используется для ширины картринки,
+    высота указывается автоматически либо её можно указать самому с помощью height.
+    так же наоборот если указать height то ширина укажется автоматически.
+    alt нужен для корректного отображения картинок, то есть если картинка не прогрузиться, то выведеться текст alt
+   -->
+
+   <!-- Таблицы -->
+
+   <table border="1" width="150px">
+     <!-- border это обводка таблицы. width работает также как с картинками -->
+     <thead>
+       <tr> <!-- tr создание ряда -->
+         <th>Имя</th> <!-- В thead делаем жирные заголовки th -->
+         <th>Фамилия</th>
+       </tr>
+     </thead>
+     <tbody align="center">
+       <!-- align например центрует то что внутри tbody,
+        их можно прописывать через css -->
+       <tr>
+         <td>Джон</td> <!-- td обычный текст в таблице -->
+         <td>Бол</td>
+       </tr>
+       <tr>
+         <td>Джон 2</td>
+         <td>Бол</td>
+       </tr>
+       <tr>
+         <td>Джон 3</td>
+         <td>Бол</td>
+       </tr>
+     </tbody>
+     <tfoot>
+       <tr>
+         <td>Last</td>
+         <td>One</td>
+       </tr>
+     </tfoot>
+   </table>
+   <!-- th и td создаёт столбцы отличаются они в каком виде будет текст -->
+
+    <!-- подключение js -->
+
+    <script src="js/script.js"></script>
+
+    <!-- div и spin  -->
+
+    <div>Текст</div> <!-- с помощью div создаются блоки,
+                     которым можно добавлять различные стили-->
+    <div>Текст</div>
+    <span>Текст</span><!-- span тоже самое что div только строчный -->
+
+    <!-- формы -->
+
+    <form action="" method="post">
+      <!--передача чего либо из формы на страницу вписанную в action.
+       method это метод передачи данных из формы
+      это два обязательных атрибута -->
+      <label for="user_name">Введите имя</label>
+      <!-- for нужен для присвоения текста к инпуту -->
+      <input type="text" placeholder="Валера" value="Валера?" maxlength="7" name="user_name" id="user_name"><br>
+      <!-- placeholder текст на фоне, при вводе пропадает
+      value то что будет вписанно в input'е
+      maxlength максимальное кол-во символов
+      name нужен для того чтобы присвоить имя дла js
+      id тоже самое что name только для css -->
+      <label>Введите пароль</label>
+      <input type="password"><br>
+      <!-- разница между text и password в том,
+       что password не показывает вводимые символы-->
+       <label>Введите почту</label>
+       <input type="email"><br>
+       <!-- конкретно этот тип особо ничего не делает,
+       но разные браузеры добавляют разные фишки
+       например хром при наведении на поле выведеться подсказка
+       то что поле должно содержать @ и . или чтото вроде этого-->
+       <input type="url"><br>
+       <input type="color"><br><!--не везде поддерживается быть окуратнее-->
+       <input type="date"><br><!--не везде поддерживается быть окуратнее-->
+       <input type="time"><br>
+       <input type="datetime"><br><!--это даже хром не поддерживает осторожнее-->
+       <input type="checkbox"><br><!-- галочка -->
+       <input type="radio" name='state'><br><!-- выбор одной из двух кнопок при одиннаковых именах-->
+       <input type="radio" name="state"><br>
+       <input type="file"><br>
+       <input type="button" value="кнопка ради кнопки"><br><!-- кнопка -->
+       <input type="submit" value="Отправить"><br><!-- перезагрузка страницы -->
+       <input type="reset" value="Очистить"><br><!--  кнопка очищения формы от данных -->
+
+       <!-- поле для ввода большого кол-во текста тег для создания кнопки -->
+
+       <textarea placeholder="Введите чтото" maxlength="50">Просто текст</textarea><br>
+       <!-- тут не существует атрибута value
+       вместо него текст вписывается внутрь textarea.
+       required используется для того,
+       чтобы нельзя было отправить форму без записей в ней-->
+       <button type="reset">Готово</button>
+
+       <!--  Селекторы выбора -->
+
+       <select multiple size="">
+         <option disabled selected>Выберите марку</option>
+         <option>BMW</option>
+         <option>Porche</option>
+         <option>Mercedec</option>
+       </select>
+       <!-- multiple используется для выбора нескольких вариантов -->
+    </form>
+
+    <!-- какаято хуйня -->
+
+    <header>Шапка</header>
+    <main>Основная часть сайта</main>
+    <aside>Боковая часть сайта</aside>
+    <footer>Футер</footer>
+    <!-- header = main = aside = footer = div только с шапкой нихуя не меняется -->
+    <progress max="100" value="35">Загрузка...</progress>
+    <!-- прогрес бар с максимальным значением - max
+    и нынешним значением value, если браузер не поддерживает тег progress
+    то он выведет текст который мы введём-->
+    <details>
+      <summary>Подробнее</summary>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, optio.
+    </details>
+  </body>
+</html>
